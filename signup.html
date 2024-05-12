@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!-- REMIXICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Signup</title>
+</head>
+<body>
+    <div class="signup" id="signup-content">
+        <form action="http://localhost:3000/signup" method="POST" class="signup__form">
+            <h3 class="signup__title">Sign Up</h3>
+            <div class="signup__group">
+                <div>
+                    <label for="signup-fname" class="signup__label">First Name</label>
+                    <input type="text" placeholder="Write your First Name" id="signup-fname" name="firstName" class="signup__input" required>
+                </div>
+                <div>
+                    <label for="signup-lname" class="signup__label">Last Name</label>
+                    <input type="text" placeholder="Write your Last Name" id="signup-lname" name="lastName" class="signup__input" required>
+                </div>
+                <div>
+                    <label for="signup-email" class="signup__label">Email</label>
+                    <input type="email" placeholder="Write your email" id="signup-email" name="email" class="signup__input" required>
+                </div>
+                <div>
+                    <label for="signup-pass" class="signup__label">Password</label>
+                    <input type="password" placeholder="Enter your password" id="signup-pass" name="password" class="signup__input" required>
+                </div>
+                <div>
+                    <label for="signup-confirm-pass" class="signup__label">Confirm Password</label>
+                    <input type="password" placeholder="Enter your Confirm Password" id="signup-confirm-pass" name="confirmPassword" class="signup__input" required>
+                </div>
+            </div>
+            <button type="submit" class="signup__button button">Sign Up</button>
+        </form>
+        <i class="ri-close-line login-clos" id="signup-close"></i>
+    </div>
+    
+    <!-- SWIPER JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

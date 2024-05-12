@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!-- REMIXICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Add To Cart</title>
+</head>
+<body class="bodyy">
+    <nav class="nave">
+        <h1>ADD To CART BOOKS</h1>
+    </nav>
+    <h3>Total Books</h3>
+    <span id="cartCounter">0</span>
+    <h3>Total Amount</h3>
+    <span id="totalAmount">$0.00</span>
+
+    <button onclick="addToCart(11.99)" class="btnn">Add Book</button>
+    <button onclick="removeFromCart()" class="btnn">Remove Book</button>
+
+    <!-- Proceed to Checkout Button -->
+    <button onclick="showPaymentMethods()" class="btnn">Proceed to Checkout</button>
+
+    <!-- Payment Method Selection -->
+    <div id="paymentMethods" class="pay" style="display: none;">
+        <h3>Select Payment Method:</h3>
+        <input type="radio" id="creditCard" name="paymentMethod" value="creditCard">
+        <label for="creditCard">Credit Card</label><br>
+        <input type="radio" id="paypal" name="paymentMethod" value="paypal">
+        <label for="paypal">PayPal</label><br>
+        <input type="radio" id="bitcoin" name="paymentMethod" value="bitcoin">
+        <label for="bitcoin">Cash On Delivery</label><br>
+        <!-- You can add more payment methods as needed -->
+        <button onclick="processPayment()" class="btnn">Process Payment</button>
+    </div>
+
+    <footer class="footerrr">
+        <p>&copy; 2024 Add Cart Books. All rights reserved.</p>
+    </footer>
+
+    <!-- SWIPER JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
